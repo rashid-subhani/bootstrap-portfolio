@@ -1,0 +1,30 @@
+body {
+    padding-top: 54px;
+  }
+  
+  header .welcome {
+    margin-top: 3em;
+  }
+  
+  @media (min-width: 992px) {
+    body {
+      padding-top: 56px;
+    }
+  }
+  
+  .card {
+    height: 100%;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+
+  .link-hover:hover {
+    text-decoration: underline;
+    color: azure;
+  }
+  
+  /*!
+   * © 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+   */

@@ -1,47 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Website</title>
-    <link rel="stylesheet" href="">
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+    <!-- Bootstrap core css  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS Custom Style  -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Custom icons for this template -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="https://fontawesome.com/icons" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">My Portfolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#welcome"
+                >Welcome
+                <span class="sr-only"></span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#work">My Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Welcome Section -->
+    <header class="p-5 mb-4 bg-secondary">
+      <div class="p-5">
+        <div class="container-fluid py-5 text-white">
+          <h1 id="welcome" class="display-5 fw-bold">
+            Welcome to Rashid Portfolio!
+          </h1>
+          <p class="col-md-12 fs-4">
+            I am a Web Developer. I love to work on awesome Websites. I have
+            professional and development experience. I have Masters in Public
+            Administration as well as Banking, Finance & Management. I started
+            my journey in Information Technology which has more growth and has
+            given me the latest skills and knowledge in the web development
+            industry.
+          </p>
+          <div>
+            <img src="images/user.png" alt="image" width="300px" />
           </div>
         </div>
-      </nav>
-</body>
+      </div>
+    </header>
+
+    <!-- work sections displaying in grid -->
+
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <img
+            src="images/1.jpg"
+            class="rounded mx-auto d-block"
+            width="300px"
+            height="200px"
+            alt="image"
+          />
+          <h2 id="work">Web Development</h2>
+          <p>
+            My focus is on designing and developing websites that look great and
+            work well. I'm skilled in a range of programming languages and
+            platforms, including HTML, CSS and JavaScript. I have worked on
+            websites for different industries such as Blogging, finance,
+            e-commerce and education..
+          </p>
+        </div>
+        <div class="col">
+          <img
+            src="images/2.jpg"
+            class="rounded mx-auto d-block"
+            width="300px"
+            height="200px"
+            alt="image"
+          />
+          <h2 id="work">SEO Marketing</h2>
+          <p>
+            As a web developer, I integrate SEO best practices into website
+            design and development to enhance online visibility and organic
+            traffic. It involves various strategies, including keyword research,
+            on-page optimization, link building, and content creation, to rank
+            higher in search engine results pages.
+          </p>
+        </div>
+        <div class="col">
+          <img
+            src="images/3.jpg"
+            class="rounded mx-auto d-block"
+            width="300px"
+            height="200px"
+            alt="image"
+          />
+          <h2 id="work">App Development</h2>
+          <p>
+            Introducing our easy-to-use app! It helps you do things quickly and
+            enjoyably. Simplify your tasks with our user-friendly features. Make
+            life easier with our new app! Get things done faster and have fun
+            doing it. Simple, smart, and super user-friendly.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- bootstrap card for each project   -->
+    <div class="container d-flex flex-row">
+      <div class="card m-5" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">Project 1</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">
+            HTML-Sementic-Elements
+          </h6>
+          <p class="card-text">
+            HTML Semantic elements and CSS changes This challenge focuses on
+            HTML Semantic elements along with CSS changes. This will create a
+            huge impact for Search engine optimization.Changes in HTML: Header,
+            section, aside, footer elements.
+          </p>
+          <a
+            href="https://github.com/rashid-subhani/html-sementic-elements"
+            class="card-link"
+            >Project link</a
+          >
+        </div>
+      </div>
+      <div class="card m-5" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">Project 2</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">
+            Rashid's-Portfolio-Webpage
+          </h6>
+          <p class="card-text">
+            Welcome to my portfolio webpage. This webpage will showcase my
+            skills in HTML and CSS. Features include -About Me. Work Experience
+            and Contact Me sections -Responsive design using media queries
+            -Flexbox layout for improved styling and CSS Variables.
+          </p>
+          <a
+            href="https://github.com/rashid-subhani/rashid-s-portfolio-webpage"
+            class="card-link"
+            >Project link</a
+          >
+        </div>
+      </div>
+      <div class="card m-5" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">Project 3</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">
+            Bootstrap-Portfolio
+          </h6>
+          <p class="card-text">
+            A Bootstrap portfolio is a website portfolio that utilizes the
+            Bootstrap framework. Bootstrap provides a responsive and
+            mobile-first grid system, along with pre-designed components and
+            styles, making it easier for developers to create visually appealing
+            and functional websites.
+          </p>
+          <a
+            href="https://github.com/rashid-subhani/bootstrap-portfolio"
+            class="card-link"
+            >Project link</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- skill section  -->
+    <section id="skills" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Skills</h2>
+        <div class="row">
+          <!-- Add your skill cards here -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Front-end Web Development</h5>
+                <ul class="list-unstyled">
+                  <li>
+                    Git, GitHub, HTML5, CSS3, JavaScript, Flexbox, JQuery, APIs,
+                    Node.js
+                  </li>
+                  <li>
+                    NPM, JSON, ECMAScript6, Object-Oriented Programing,
+                    Test-Driven Development
+                  </li>
+                  <li>React.js, React Hooks, JSX</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section>
+      <div class="container bg-secondary">
+        <div class="row align-items-center">
+          <div class="col-lg-5 order-lg-2">
+            <div class="p-5">
+              <img
+                class="img-fluid rounded-circle"
+                src="images/user1.png"
+                alt="image"
+              />
+            </div>
+          </div>
+          <div class="col-lg-7 order-lg-1 text-white">
+            <div class="p-5">
+              <h2 id="about" class="display-4">About me!</h2>
+              <p>
+                I am a Web Developer. I love to work on awesome Websites. I have
+                professional and development experience. I have Masters in
+                Public Administration as well as Banking, Finance & Management.
+                I started my journey in Information Technology which has more
+                growth and has given me the latest skills and knowledge in the
+                web development industry.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact section  -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Contact Me</h2>
+        <div class="row">
+          <div class="col-lg-6">
+            <h4>Contact Information</h4>
+            <p>Email: ras.sub@gmail.com</p>
+            <p>Phone: +447727868797</p>
+            <a
+                href="https://www.linkedin.com/in/rashid-subhani/"
+                target="_blank"
+                class="text-dark me-3 link-hover"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a
+                href="https://twitter.com/ras_sub2003"
+                target="_blank"
+                class="text-dark me-3 link-hover"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/rashid.subhani.39/"
+                target="_blank"
+                class="text-dark me-3 link-hover"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/ras_sub2003/"
+                target="_blank"
+                class="text-dark me-3 link-hover"
+                ><i class="fab fa-instagram"></i
+              ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer section  -->
+
+    <footer class="bg-dark text-light py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center">
+            <p class="copyright">&copy; 2023 Rashid. All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <!-- Added social icons  -->
+            <p>
+              Connect with me on:
+              <a
+                href="https://www.linkedin.com/in/rashid-subhani/"
+                target="_blank"
+                class="me-3 link-hover"
+                >Linkedin</a>
+              <a
+                href="https://twitter.com/ras_sub2003"
+                target="_blank"
+                class="me-3 link-hover"
+                >Twitter</a>
+              <a
+                href="https://www.facebook.com/rashid.subhani.39/"
+                target="_blank"
+                class="me-3 link-hover"
+                >Facebook</a>
+              <a
+                href="https://www.instagram.com/ras_sub2003/"
+                target="_blank"
+                class="me-3 link-hover"
+                >Instagram</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
