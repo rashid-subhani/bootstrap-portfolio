@@ -5,16 +5,6 @@ body {
   header .welcome {
     margin-top: 3em;
   }
-  
-  @media (min-width: 992px) {
-    body {
-      padding-top: 56px;
-    }
-  }
-  
-  .card {
-    height: 100%;
-  }
 
   a:link {
     text-decoration: none;
@@ -24,7 +14,28 @@ body {
     text-decoration: underline;
     color: azure;
   }
+
+  .btn-hover:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  }
+
   
-  /*!
-   * © 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
-   */
+  /* Media queries for small devices */
+  @media (max-width: 576px) {
+    .card-text, .card {
+      width: 40%;
+    }
+  }
+  
+ /* Media queries for medium devices */
+  @media (min-width: 577px) and (max-width: 768px) {
+    .card-text, .card {
+        width: 70%;
+    }
+  }
+ /* Media queries for laptops */
+  @media (min-width: 577px) and (max-width: 768px) {
+    .card-text, .card {
+        width: 100%;
+    }
+  }
